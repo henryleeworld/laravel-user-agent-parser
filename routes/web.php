@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\UserAgentParserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,4 +14,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/device/info', 'UserAgentParserController@getDeviceInfo');
+Route::get('/device/info', [UserAgentParserController::class, 'getDeviceInfo']);
