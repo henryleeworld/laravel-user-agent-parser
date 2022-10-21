@@ -1,4 +1,4 @@
-# Laravel 8 用戶代理分析器
+# Laravel 9 用戶代理分析器
 
 引入 jenssegers 的 agent 套件來擴增分析用戶代理來判斷來源裝置，在考慮透過用戶代理字串，去偵測使用裝置時，先從認清為什麼要這麼做開始：你正針對某瀏覽器的特定錯誤奮戰著？你正試圖檢查某個特定功能是否存在？你希望給不同的瀏覽器不同的 HTML？
 
@@ -22,5 +22,5 @@ $ php artisan key:generate
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/HbVBTJw.png)
+![](https://i.imgur.com/Lnb8ZXc.png)
 > 辨別瀏覽器、行動裝置或是機器人等資訊
