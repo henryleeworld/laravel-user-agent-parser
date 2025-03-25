@@ -19,14 +19,14 @@ class UserAgentParserController extends Controller
 
     public function getDeviceInfo()
     {
-        echo '作業系統：' . $this->agent::platform() . PHP_EOL;
-        echo '設備名稱：' . $this->agent::device() . PHP_EOL;
-        echo '瀏覽器：' . $this->agent::browser() . PHP_EOL;
-        echo '是否為 Safari 瀏覽器：' . ($this->agent::isSafari() ? '是' : '否') . PHP_EOL;
-        echo '是否為桌上型電腦：' . ($this->agent::isDesktop() ? '是' : '否') . PHP_EOL;
-        echo '是否為平板裝置：' . ($this->agent::isTablet() ? '是' : '否') . PHP_EOL;
-        echo '是否為行動裝置：' . ($this->agent::isMobile() ? '是' : '否') . PHP_EOL;
-        echo '是否為 iOS：' . ($this->agent::isiOS() ? '是' : '否') . PHP_EOL;
-        echo '是否為 Android OS：' . ($this->agent::isAndroidOS() ? '是' : '否') . PHP_EOL;
+        echo __('Platform: ') . $this->agent::platform() . PHP_EOL;
+        echo __('Device: ') . $this->agent::device() . PHP_EOL;
+        echo __('Browser: ') . $this->agent::browser() . PHP_EOL;
+        echo __('Whether it is Safari browser: ') . ($this->agent::isSafari() ? __('Yes') : __('No')) . PHP_EOL;
+        echo __('Whether it is a desktop: ') . ($this->agent::isDesktop() ? __('Yes') : __('No')) . PHP_EOL;
+        echo __('Whether it is a tablet: ') . ($this->agent::isTablet() ? __('Yes') : __('No')) . PHP_EOL;
+        echo __('Whether it is a mobile: ') . ($this->agent::isMobile() ? __('Yes') : __('No')) . PHP_EOL;
+        echo __('Whether it is iOS: ') . ($this->agent::isiOS() ? __('Yes') : __('No')) . PHP_EOL;
+        echo __('Whether it is Android OS: ') . ($this->agent::isAndroidOS() ? __('Yes') : __('No')) . PHP_EOL;
     }
 }
