@@ -6,13 +6,10 @@ use Jenssegers\Agent\Facades\Agent;
 
 class UserAgentParserController extends Controller
 {
-
-    private $agent;
-
     /**
      * Instantiate a new UserController instance.
      */
-    public function __construct(Agent $agent)
+    public function __construct(private Agent $agent)
     {
         $this->agent = $agent;
     }
